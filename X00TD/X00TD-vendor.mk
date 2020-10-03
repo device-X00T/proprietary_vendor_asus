@@ -20,7 +20,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/product/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
     vendor/asus/X00TD/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_asus:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_asus \
+    vendor/asus/X00TD/proprietary/product/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
+    vendor/asus/X00TD/proprietary/product/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/asus/X00TD/proprietary/vendor/bin/qfp-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qfp-daemon \
+    vendor/asus/X00TD/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/asus/X00TD/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/asus/X00TD/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/asus/X00TD/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -38,6 +41,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
     vendor/asus/X00TD/proprietary/vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_workspaceFile.qwsp \
     vendor/asus/X00TD/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
+    vendor/asus/X00TD/proprietary/vendor/etc/calmodule.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/calmodule.cfg \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/csidtg_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/csidtg_camera.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/csidtg_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/csidtg_chromatix.xml \
@@ -66,6 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/firmware/a512_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a512_zap.mdt \
     vendor/asus/X00TD/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
     vendor/asus/X00TD/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
+    vendor/asus/X00TD/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
     vendor/asus/X00TD/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
     vendor/asus/X00TD/proprietary/vendor/firmware/cppf.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/cppf.b00 \
     vendor/asus/X00TD/proprietary/vendor/firmware/cppf.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/cppf.b01 \
@@ -90,7 +95,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/firmware/widevine.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b07 \
     vendor/asus/X00TD/proprietary/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt \
     vendor/asus/X00TD/proprietary/vendor/lib/dualcali_dump.bin:$(TARGET_COPY_OUT_VENDOR)/lib/dualcali_dump.bin \
+    vendor/asus/X00TD/proprietary/vendor/lib/hw/activity_recognition.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.sdm660.so \
     vendor/asus/X00TD/proprietary/vendor/lib/hw/camera.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.sdm660.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/hw/sensors.sdm660_64.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.sdm660_64.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libactuator_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_bu64297.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libactuator_dw9714.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libactuator_hi1333_ofilm_dw9714v.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_hi1333_ofilm_dw9714v.so \
@@ -105,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/lib/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdr_detection.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libarcsoft_night_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_night_shot.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libarcsoft_picselfie_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_picselfie_algorithm.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libcalmodule_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcalmodule_common.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_csidtg_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_common.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_csidtg_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_cpp_preview.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_csidtg_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_postproc.so \
@@ -669,13 +677,32 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc_pipe.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensor_calibrate.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/sensors.native.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.native.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/asus/X00TD/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/hw/activity_recognition.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/activity_recognition.sdm660.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/hw/cdfinger.fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/cdfinger.fingerprint.default.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/hw/fingerprint.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.sdm660.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/hw/sensors.sdm660_64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.sdm660_64.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/libcalmodule_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcalmodule_common.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/libqfp-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp-service.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.fingerprint@1.0.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
+    vendor/asus/X00TD/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensor_calibrate.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/sensors.native.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.native.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.sensorscalibrate-V1.0-java
